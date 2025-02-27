@@ -1,0 +1,39 @@
+{
+  "name": "stellay-pay-svc",
+  "version": "1.0.0",
+  "description": "Stellarpay node backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "rimraf dist && tsc",
+    "start": "npx serverless offline",
+    "deploy": "npx serverless deploy",
+    "remove": "npx serverless remove",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "aws-serverless-express": "^3.4.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "log4js": "^6.9.1",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/aws-serverless-express": "^3.3.10",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "rimraf": "^6.0.1",
+    "serverless-offline": "^14.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
