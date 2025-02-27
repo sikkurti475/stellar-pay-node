@@ -7,7 +7,7 @@ Node backend for stellarpay
     2. npm run build
     3. npm run start
 
-    You should be able to see the api start and give out endpoints to test.
+    You should be able to see the api start and give out endpoints to test in postman
 
 # sample curls for postman teting
 
